@@ -38,3 +38,8 @@
 .contact-card{justify-self:stretch;min-width:0}
 footer{flex-wrap:wrap}
 }
+/* Menyn följer med vid scrollning */
+.top{position:sticky;top:0;z-index:1000}
+html{scroll-padding-top:86px}
+
+.top::before{content:"";position:absolute;z-index:-1;left:50%;transform:translateX(-50%);width:100vw;top:0;bottom:0;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.06)}
