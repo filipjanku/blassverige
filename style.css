@@ -43,3 +43,9 @@ footer{flex-wrap:wrap}
 html{scroll-padding-top:86px}
 
 .top::before{content:"";position:absolute;z-index:-1;left:50%;transform:translateX(-50%);width:100vw;top:0;bottom:0;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.06)}
+
+/* BLÅS uppdatering: fast navigering, synlig under scroll */
+body{padding-top:76px}
+header.top{position:fixed!important;top:0!important;left:0!important;right:0!important;width:100%!important;max-width:none!important;height:76px!important;margin:0!important;padding:0 max(24px,calc((100vw - 1180px)/2 + 24px))!important;background:#fff!important;z-index:99999!important;box-shadow:0 2px 12px rgba(0,0,0,.09)}
+html{scroll-padding-top:76px}
+@media(max-width:800px){body{padding-top:90px}header.top{height:90px!important;padding:8px 16px!important;align-items:center!important}html{scroll-padding-top:90px}}
