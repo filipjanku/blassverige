@@ -49,3 +49,15 @@ body{padding-top:76px}
 header.top{position:fixed!important;top:0!important;left:0!important;right:0!important;width:100%!important;max-width:none!important;height:76px!important;margin:0!important;padding:0 max(24px,calc((100vw - 1180px)/2 + 24px))!important;background:#fff!important;z-index:99999!important;box-shadow:0 2px 12px rgba(0,0,0,.09)}
 html{scroll-padding-top:76px}
 @media(max-width:800px){body{padding-top:90px}header.top{height:90px!important;padding:8px 16px!important;align-items:center!important}html{scroll-padding-top:90px}}
+
+/* Bild 2 visas rakt framifrån, utan överlagrad text */
+.ad-visual{background-image:url('advertising-screen-v3.jpg');background-position:center center;background-size:cover}
+/* Mjuk blå ljuseffekt på alla klickbara länkar och knappar */
+a{transition:color .22s ease,background-color .22s ease,box-shadow .22s ease,transform .22s ease,filter .22s ease}
+.top nav a:not(.contact-btn):hover,.top nav a:not(.contact-btn):focus-visible{color:#0879e8;text-shadow:0 0 12px rgba(0,140,255,.35)}
+.contact-btn:hover,.contact-btn:focus-visible,.blue-btn:hover,.blue-btn:focus-visible{background:#1399ff;box-shadow:0 7px 25px rgba(0,130,255,.48),0 0 13px rgba(42,174,255,.38);transform:translateY(-2px)}
+.outline-btn:hover,.outline-btn:focus-visible{background:rgba(25,148,241,.22);box-shadow:0 0 24px rgba(43,171,255,.85),inset 0 0 12px rgba(43,171,255,.18);transform:translateY(-2px)}
+.contact-card a:hover,.contact-card a:focus-visible{color:#fff;text-shadow:0 0 14px rgba(67,187,255,.85)}
+.top>a:hover img,.top>a:focus-visible img{filter:drop-shadow(0 0 9px rgba(28,157,255,.65))}
+a:focus-visible{outline:2px solid #52b9ff;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){a{transition:none}.contact-btn:hover,.blue-btn:hover,.outline-btn:hover{transform:none}}
