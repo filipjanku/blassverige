@@ -10,7 +10,7 @@
 .benefit h3{font-size:16px;margin:0 0 4px}
 .benefit p{font-size:13px;line-height:1.42;color:#56667a;margin:0}
 .blue-btn{display:inline-block;font-size:13px;font-weight:700}
-.ad-visual{min-height:680px;background-image:url('advertising-screen-v3.jpg');background-size:cover;background-position:center;position:relative;overflow:hidden}
+.ad-visual{min-height:680px;background-image:url('blas-reklamskarm-framifran-20261007.jpg?v=2');background-size:cover;background-position:center;position:relative;overflow:hidden}
 
 .market-area span{color:#fff;font-size:27px;line-height:1.12;font-weight:800;text-shadow:0 2px 8px rgba(0,0,0,.45)}
 .contact{min-height:310px;background:#061f3a;color:#fff;padding:65px max(24px,calc((100vw - 1180px)/2 + 24px));display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.contact small{color:#67c0ff}.contact h2{font-size:44px}.contact p{color:#c3d2df;max-width:520px;line-height:1.5}.contact-card{justify-self:end;min-width:390px;padding:31px 34px;border-radius:14px;background:#0c345d;box-shadow:0 10px 28px rgba(0,0,0,.12)}.contact-card a{display:block;color:#67c0ff;font-size:21px;font-weight:800}.contact-card span{display:block;margin-top:13px;color:#d1deea;font-size:12px}footer{height:82px;max-width:1180px;margin:auto;padding:0 24px;display:flex;align-items:center;gap:14px;color:#718094;font-size:11px}footer img{width:44px;height:44px;object-fit:contain}footer b{margin-left:auto}@media(max-width:800px){
@@ -51,7 +51,7 @@ html{scroll-padding-top:76px}
 @media(max-width:800px){body{padding-top:90px}header.top{height:90px!important;padding:8px 16px!important;align-items:center!important}html{scroll-padding-top:90px}}
 
 /* Bild 2 visas rakt framifrån, utan överlagrad text */
-.ad-visual{background-image:url('advertising-screen-v3.jpg');background-position:center center;background-size:cover}
+.ad-visual{background-image:url('blas-reklamskarm-framifran-20261007.jpg?v=2');background-position:center center;background-size:cover}
 /* Mjuk blå ljuseffekt på alla klickbara länkar och knappar */
 a{transition:color .22s ease,background-color .22s ease,box-shadow .22s ease,transform .22s ease,filter .22s ease}
 .top nav a:not(.contact-btn):hover,.top nav a:not(.contact-btn):focus-visible{color:#0879e8;text-shadow:0 0 12px rgba(0,140,255,.35)}
@@ -61,3 +61,10 @@ a{transition:color .22s ease,background-color .22s ease,box-shadow .22s ease,tra
 .top>a:hover img,.top>a:focus-visible img{filter:drop-shadow(0 0 9px rgba(28,157,255,.65))}
 a:focus-visible{outline:2px solid #52b9ff;outline-offset:4px}
 @media(prefers-reduced-motion:reduce){a{transition:none}.contact-btn:hover,.blue-btn:hover,.outline-btn:hover{transform:none}}
+
+/* Hover – tydligt blått sken på alla interaktiva länkar */
+header.top nav a, .outline-btn, .blue-btn, .contact-card a, footer a {transition:all .2s ease!important}
+header.top nav a:not(.contact-btn):hover {color:#078dff!important;text-shadow:0 0 13px rgba(0,150,255,.7)!important;transform:translateY(-2px)}
+header.top nav .contact-btn:hover, .blue-btn:hover {background:#21a7ff!important;box-shadow:0 0 0 3px rgba(33,167,255,.22),0 0 28px rgba(0,142,255,.75)!important;transform:translateY(-3px)!important}
+.outline-btn:hover {background:#0d79c8!important;box-shadow:0 0 0 3px rgba(72,184,255,.2),0 0 30px rgba(72,184,255,.85)!important;transform:translateY(-3px)!important}
+.contact-card a:hover {color:#fff!important;text-shadow:0 0 16px #32aeff!important}
