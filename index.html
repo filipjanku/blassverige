@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BLÅS – För allas säkerhet i trafiken</title>
+<meta name="description" content="BLÅS erbjuder kostnadsfria alkoholmätstationer på strategiska platser – för ökad trafiksäkerhet.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="#start"><img src="logo.png" alt="BLÅS"></a>
+  <button class="menu" aria-label="Öppna meny">☰</button>
+  <nav>
+    <a href="#sa-fungerar">Så fungerar BLÅS</a>
+    <a href="#om-oss">Om oss</a>
+    <a href="#synas">Vill du synas på våra skärmar?</a>
+    <a href="#kontakt">Kontakta oss</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="start">
+  <div class="hero-copy">
+    <p class="eyebrow">BLÅS</p>
+    <h1>För allas säkerhet<br><span>i trafiken.</span></h1>
+    <p>Kostnadsfria alkoholmätstationer på strategiska platser – för en tryggare vardag och säkrare vägar.</p>
+    <a class="btn" href="#sa-fungerar">Så fungerar BLÅS <b>→</b></a>
+  </div>
+  <div class="machine-wrap">
+    <div class="screen-message"><strong>Testa dig<br>innan du kör.</strong><span>Din logotyp här?</span></div>
+    <img src="maskin.png" alt="BLÅS alkoholmätstation">
+  </div>
+</section>
+
+<section class="section" id="sa-fungerar">
+  <div class="section-head">
+    <div><p class="eyebrow blue">ENKELT OCH TILLGÄNGLIGT</p><h2>Så fungerar BLÅS</h2></div>
+    <p>BLÅS gör det enkelt att kontrollera sin alkoholnivå innan man sätter sig bakom ratten. Testet är kostnadsfritt för användaren.</p>
+  </div>
+  <div class="steps">
+    <article><span>01</span><h3>Hitta en station</h3><p>Stationerna placeras där människor rör sig – exempelvis vid restauranger, köpcentrum, arenor och evenemang.</p></article>
+    <article><span>02</span><h3>Genomför testet</h3><p>Följ instruktionerna på skärmen och genomför alkoholtestet direkt på plats.</p></article>
+    <article><span>03</span><h3>Få ditt resultat</h3><p>Du får snabbt ett tydligt resultat som hjälper dig att fatta ett tryggare beslut.</p></article>
+  </div>
+</section>
+
+<section class="split" id="om-oss">
+  <div class="text">
+    <p class="eyebrow blue">OM OSS</p>
+    <h2>En enkel idé med ett tydligt mål.</h2>
+    <p>BLÅS är ett initiativ med målet att minska rattfylleri och öka trafiksäkerheten i Sverige.</p>
+    <p>Vi tror på enkla lösningar som gör det lättare att ta ansvar – för sig själv och för andra. Genom att göra alkoholmätning kostnadsfri och lättillgänglig vill vi bidra till tryggare vägar för alla.</p>
+  </div>
+  <div class="image-card"><img src="maskin.png" alt="BLÅS station"></div>
+</section>
+
+<section class="partner" id="synas">
+  <div>
+    <p class="eyebrow">PARTNERSKAP</p>
+    <h2>Vill du synas<br>på våra skärmar?</h2>
+    <p>Våra stationer erbjuder företag och organisationer möjlighet att synas i ett positivt sammanhang – samtidigt som ni bidrar till ökad trafiksäkerhet.</p>
+    <a class="btn light" href="#samarbete">Läs mer om samarbeten <b>→</b></a>
+  </div>
+  <div class="partner-card">
+    <h3>Synlighet som gör skillnad</h3>
+    <p>När stationen inte används för alkoholtest kan skärmen visa partnerns budskap, varumärke eller kampanj.</p>
+    <p>Placering och upplägg kan anpassas efter samarbetet och den miljö där stationen finns.</p>
+  </div>
+</section>
+
+<section class="section cooperation" id="samarbete">
+  <p class="eyebrow blue">SAMARBETA MED BLÅS</p>
+  <h2>Syns där det betyder något.</h2>
+  <p class="lead">Vi erbjuder företag, organisationer och andra aktörer möjlighet att synas på våra digitala skärmar när stationerna inte används för alkoholtest.</p>
+  <div class="mini-grid">
+    <article><h3>Digital exponering</h3><p>Visa logotyp, budskap eller kampanj på stationernas skärmar.</p></article>
+    <article><h3>Relevanta platser</h3><p>Synlighet där människor faktiskt befinner sig – från publika miljöer till evenemang.</p></article>
+    <article><h3>Flexibelt upplägg</h3><p>Vi anpassar samarbetet efter era mål och vilka stationer ni vill synas på.</p></article>
+  </div>
+  <div class="contact-box">Vill du veta mer? <a href="mailto:kontakt@blassverige.se">kontakt@blassverige.se</a></div>
+</section>
+
+<section class="contact" id="kontakt">
+  <p class="eyebrow blue">KONTAKT</p>
+  <h2>Kontakta oss</h2>
+  <p>Vill du veta mer om BLÅS, samarbeta med oss eller har frågor? Hör gärna av dig.</p>
+  <a class="mail" href="mailto:kontakt@blassverige.se">kontakt@blassverige.se</a>
+  <p class="city">Malmö</p>
+</section>
+</main>
+
+<footer><img src="logo.png" alt=""><span>BLÅS – För allas säkerhet i trafiken.</span></footer>
+<script>
+const b=document.querySelector('.menu'),n=document.querySelector('nav');
+b.onclick=()=>n.classList.toggle('open');
+document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>n.classList.remove('open'));
+</script>
+</body></html>
