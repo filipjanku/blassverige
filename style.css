@@ -130,3 +130,12 @@ header.top nav .contact-btn:hover, .blue-btn:hover {background:#21a7ff!important
  header.top nav .contact-btn{width:100%;margin-top:14px;text-align:center;padding:14px 18px!important;border:0}
  html{scroll-padding-top:76px!important}
 }
+
+/* Rund, mjuk blå hover-effekt runt BLÅS-loggan (alla sidors header) */
+header.top > a:first-child{position:relative;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:66px;height:66px;border-radius:50%!important;background:transparent!important;box-shadow:none!important;outline-offset:3px;isolation:isolate;transition:box-shadow .22s ease,background-color .22s ease!important}
+header.top > a:first-child::before{content:"";position:absolute;inset:0;border-radius:50%;background:rgba(40,164,255,0);box-shadow:none;z-index:-1;transition:background .22s ease,box-shadow .22s ease}
+header.top > a:first-child:hover,header.top > a:first-child:focus-visible{background:transparent!important;box-shadow:none!important;border-radius:50%!important;transform:none!important}
+header.top > a:first-child:hover::before,header.top > a:first-child:focus-visible::before{background:rgba(48,163,255,.10);box-shadow:0 0 0 2px rgba(52,168,255,.28),0 0 18px 5px rgba(27,152,255,.40)}
+header.top > a:first-child img{border-radius:50%;display:block;position:relative;filter:none!important;transition:filter .22s ease}
+header.top > a:first-child:hover img,header.top > a:first-child:focus-visible img{filter:drop-shadow(0 0 5px rgba(34,161,255,.35))!important}
+@media(max-width:900px){header.top > a:first-child{width:64px;height:64px}}
