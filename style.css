@@ -110,3 +110,23 @@ header.top nav .contact-btn:hover, .blue-btn:hover {background:#21a7ff!important
 .faq-answer p{margin:0;color:#52647a;line-height:1.75}
 @media(max-width:1100px){header.top nav{gap:12px}header.top nav a{font-size:12px}}
 @media(max-width:700px){.faq-item summary{padding:19px;font-size:15px}.faq-answer{padding:0 19px 19px}}
+
+/* Mobilmeny: endast mobil och små surfplattor */
+.mobile-menu-toggle{display:none}
+@media(max-width:900px){
+ body{padding-top:76px!important}
+ header.top{height:76px!important;min-height:76px!important;padding:0 20px!important;align-items:center!important;justify-content:space-between!important;flex-wrap:nowrap!important}
+ header.top>a img{width:60px;height:60px}
+ .mobile-menu-toggle{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:46px;height:44px;background:#eaf5ff;border:1px solid #c8e6ff;border-radius:12px;cursor:pointer;flex-shrink:0;transition:background .2s,box-shadow .2s}
+ .mobile-menu-toggle span{width:22px;height:2.5px;border-radius:2px;background:#0879e8;transition:transform .2s,opacity .2s}
+ .mobile-menu-toggle:hover,.mobile-menu-toggle:focus-visible{background:#d8efff;box-shadow:0 0 15px rgba(0,145,255,.3)}
+ .mobile-menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+ .mobile-menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+ .mobile-menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+ header.top nav{display:none!important;position:absolute;top:76px;left:0;right:0;width:100%;max-width:none!important;flex-direction:column!important;align-items:stretch!important;flex-wrap:nowrap!important;gap:0!important;background:#fff;padding:10px 20px 22px!important;box-shadow:0 12px 22px rgba(4,30,57,.16);border-top:1px solid #e6eff8;max-height:calc(100dvh - 76px);overflow-y:auto}
+ header.top nav.is-open{display:flex!important}
+ header.top nav a{display:block!important;width:100%;font-size:15px!important;line-height:1.4;padding:15px 12px;border-bottom:1px solid #eaf1f8;text-align:left;white-space:normal}
+ header.top nav a:not(.contact-btn):hover,header.top nav a:not(.contact-btn):focus-visible{background:#eaf5ff;border-radius:8px}
+ header.top nav .contact-btn{width:100%;margin-top:14px;text-align:center;padding:14px 18px!important;border:0}
+ html{scroll-padding-top:76px!important}
+}
