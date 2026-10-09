@@ -52,7 +52,7 @@ html{scroll-padding-top:76px}
 @media(max-width:800px){body{padding-top:90px}header.top{height:90px!important;padding:8px 16px!important;align-items:center!important}html{scroll-padding-top:90px}}
 
 /* Bild 2 visas rakt framifrån, utan överlagrad text */
-.ad-visual{background-image:url('wide_shallow_depth_of_field_interior_scene_with_a.png?v=3');background-position:center center;background-size:cover}
+.ad-visual{background-image:url('wide_shallow_depth_of_field_interior_scene_with_a.png?v=3');background-position:75% center;background-size:cover}
 /* Mjuk blå ljuseffekt på alla klickbara länkar och knappar */
 a{transition:color .22s ease,background-color .22s ease,box-shadow .22s ease,transform .22s ease,filter .22s ease}
 .top nav a:not(.contact-btn):hover,.top nav a:not(.contact-btn):focus-visible{color:#0879e8;text-shadow:0 0 12px rgba(0,140,255,.35)}
